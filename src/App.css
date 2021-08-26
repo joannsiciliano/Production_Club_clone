@@ -3,7 +3,10 @@
 }
 body {
   margin: 0;
-  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   background-color: black;
   font-family: "Lato PC", sans-serif;
   color: #333;
@@ -27,10 +30,10 @@ a:hover {
 .Navbar {
   position: sticky;
   top: 0;
-  width: 100%;
-  display: flex;
-  width: 100%;
+  width: 100vw;
   height: 80px;
+  display: flex;
+
   max-width: 1024px;
   margin-right: auto;
   margin-left: auto;
@@ -39,7 +42,7 @@ a:hover {
 .Navbar a {
   padding: auto;
   display: flex;
-  float: left;
+  margin: auto;
   text-align: center;
   padding: 14px 16px;
 }
@@ -48,4 +51,20 @@ a:hover {
   height: 75px;
   -o-object-fit: cover;
   object-fit: cover;
+}
+.Hamburger {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .Navbar a {
+    display: none;
+  }
+  .logo {
+    display: flex;
+    margin-right: auto;
+  }
+  .Hamburger {
+    display: flex;
+    margin-left: auto;
+  }
 }
