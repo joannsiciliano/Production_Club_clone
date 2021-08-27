@@ -1,0 +1,34 @@
+.title {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 0.2em;
+  word-spacing: 0.3em;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.backgroundGif {
+  position: fixed;
+  align-items: center;
+  top: 500px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  z-index: -1;
+}
+
+.homeContainer {
+  background-size: 100%;
+  margin: 0;
+  height: 100vh;
+}
+.homeDiv {
+  margin-top: 200px;
+}
+
+.paragraph {
+  font-style: italic;
+  color: white;
+  font-size: 20px;
+  margin: 0;
+  width: 80%;
+  margin: auto;
+}
